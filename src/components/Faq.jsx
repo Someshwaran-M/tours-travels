@@ -210,7 +210,7 @@ function Faq({ darkMode }) {
               <div className="mt-8 flex flex-col items-center justify-center gap-4 md:flex-row">
 
                 <a
-                  href="https://wa.me/919888444952"
+                  href="https://wa.me/+91 88844 49452"
                   target="_blank"
                   rel="noreferrer"
                   className="flex h-12 items-center justify-center gap-2 rounded-full bg-[#0B101B] px-8 text-base font-semibold text-white transition hover:scale-105"
@@ -220,11 +220,11 @@ function Faq({ darkMode }) {
                 </a>
 
                 <a
-                  href="tel:+919888444952"
+                  href="tel:+91 88844 49452"
                   className="flex h-12 items-center justify-center gap-2 rounded-full border-2 border-[#0B101B] px-8 text-base font-semibold text-[#0B101B] transition hover:bg-[#0B101B] hover:text-white"
                 >
                   <Phone size={24} />
-                  +91 98884 44952
+                  +91 88844 49452
                 </a>
 
               </div>
