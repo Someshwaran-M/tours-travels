@@ -9,9 +9,6 @@ import {
 } from "lucide-react";
 import logo from "../assets/images/Logo.png";
 
-
-
-
 function Navbar({
   darkMode,
   setDarkMode,
@@ -145,7 +142,7 @@ useEffect(() => {
 </button>
 
         <a
-          href="tel:+919999999999"
+          href="tel:+91 88844 49452"
           className={`flex items-center gap-2 rounded-full px-6 py-3 font-semibold transition-all duration-300 ${
   darkMode
     ? "border border-white/20 bg-white/10 text-white hover:bg-orange-500"
@@ -157,7 +154,7 @@ useEffect(() => {
         </a>
 
         <a
-          href="https://wa.me/919999999999"
+          href="https://wa.me/+91 88844 49452"
           target="_blank"
           rel="noreferrer"
           className="flex items-center gap-2 rounded-full bg-orange-500 hover:bg-orange-600 px-6 py-3 text-white font-semibold shadow-lg shadow-orange-500/40 transition-all duration-300"
@@ -205,14 +202,14 @@ useEffect(() => {
   ))}
 
   <a
-    href="tel:+919999999999"
+    href="tel:+91 88844 49452"
     className="bg-orange-500 rounded-full py-3 text-center font-semibold text-white"
   >
     Call Now
   </a>
 
   <a
-    href="https://wa.me/919999999999"
+    href="https://wa.me/+91 88844 49452"
     className="bg-orange-600 rounded-full py-3 text-center font-semibold text-white"
   >
     WhatsApp
@@ -242,7 +239,7 @@ useEffect(() => {
       <span>✔ Transparent Pricing</span>
       <span>◆</span>
 
-      <span>📞 +91 98888 44444</span>
+      <span>📞 +91 88844 49452</span>
       <span>◆</span>
 
       <span>🚖 One Way & Outstation Cab Service</span>
@@ -262,7 +259,7 @@ useEffect(() => {
       <span>✔ Transparent Pricing</span>
       <span>◆</span>
 
-      <span>📞 +91 98888 44444</span>
+      <span>📞 +91 88844 49452</span>
       <span>◆</span>
 
       <span>🚖 One Way & Outstation Cab Service</span>
@@ -273,7 +270,7 @@ useEffect(() => {
 <div className="fixed bottom-6 right-6 z-[999] flex flex-col gap-5">
 
   <a
-    href="tel:+919888844444"
+    href="tel:+91 88844 49452"
     className="floating-btn bg-gradient-to-r from-orange-500 to-orange-600 shadow-xl shadow-orange-500/50 hover:scale-110 transition-all duration-300"
   >
     <Phone
@@ -283,7 +280,7 @@ useEffect(() => {
   </a>
 
   <a
-    href="https://wa.me/919888844444"
+    href="https://wa.me/+91 88844 49452"
     target="_blank"
     rel="noreferrer"
     className="floating-btn bg-orange-500 shadow-xl shadow-orange-500/50 hover:scale-110 transition-all duration-300"
