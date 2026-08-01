@@ -81,11 +81,11 @@ function Contact({ darkMode }) {
                   </h3>
 
                   <p className={darkMode ? "text-gray-400" : "text-gray-600"}>
-                    +91 98765 43210
+                    +91 88844 49452
                   </p>
 
                   <p className={darkMode ? "text-gray-400" : "text-gray-600"}>
-                    +91 98765 43211
+                    +91 88844 49452
                   </p>
                 </div>
 
