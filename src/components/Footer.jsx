@@ -54,7 +54,7 @@ function Footer({ darkMode }) {
                 Nagma
 
                 <span className="text-orange-400">
-                  {" "}Tours&Travels
+                  {" "}Tours & Travels
                 </span>
 
               </h2>
