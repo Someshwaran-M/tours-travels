@@ -74,7 +74,7 @@ function Footer({ darkMode }) {
             <div className="mt-6 flex flex-wrap gap-4">
 
               <a
-                href="tel:+919888444952"
+                href="tel:+91 88844 49452"
                 className="flex items-center gap-3 rounded-full border border-orange-500 px-5 py-2.5 text-sm font-medium text-orange-400 transition-all duration-300 hover:bg-orange-500 hover:text-white"
               >
 
@@ -85,7 +85,7 @@ function Footer({ darkMode }) {
               </a>
 
               <a
-                href="https://wa.me/919888444952"
+                href="https://wa.me/+91 88844 49452"
                 target="_blank"
                 rel="noreferrer"
                className="flex items-center gap-3 rounded-full bg-orange-500 px-5 py-2.5 text-sm font-medium text-white transition-all duration-300 hover:bg-orange-600"
@@ -265,7 +265,7 @@ function Footer({ darkMode }) {
                   <p className={`text-base transition hover:text-orange-500 ${
   darkMode ? "text-gray-300" : "text-gray-700"
 }`}>
-                    +91 98884 44952
+                    +91 88844 49452
                   </p>
 
                 </div>
