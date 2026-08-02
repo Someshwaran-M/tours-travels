@@ -18,14 +18,41 @@ import {
 } from "lucide-react";
 
 const heroBg = "/cars/Herobg.png";
+
+// Exact fixed prices per vehicle for AC and Non-AC — no formula, just the set amounts.
 const vehicles = [
-  { id: 1, name: "MINI", price: "₹15/km", img: "/cars/Car1.png" },
-  { id: 2, name: "SEDAN", price: "₹16/km", img: "/cars/Car2.png" },
-  { id: 3, name: "ERTIGA", price: "₹21/km", img: "/cars/Car3.png" },
-  { id: 4, name: "INNOVA", price: "₹22/km", img: "/cars/Car4.png" },
-  { id: 5, name: "INNOVA CRYSTA", price: "₹25/km", img: "/cars/Car5.png" },
-  { id: 6, name: "TEMPO TRAVELLER", price: "₹30/km", img: "/cars/Car6.png" },
-  { id: 7, name: "FORCE URBANIA", price: "₹35/km", img: "/cars/Car7.png" },
+  { id: 1, name: "MINI", acPrice: 15, nonAcPrice: 14, img: "/cars/Car1.png" },
+  { id: 2, name: "SEDAN", acPrice: 16, nonAcPrice: 15, img: "/cars/Car2.png" },
+  { id: 3, name: "ERTIGA", acPrice: 21, nonAcPrice: 20, img: "/cars/Car3.png" },
+  { id: 4, name: "INNOVA", acPrice: 22, nonAcPrice: 21, img: "/cars/Car4.png" },
+  {
+    id: 5,
+    name: "INNOVA CRYSTA",
+    acPrice: 25,
+    nonAcPrice: 24,
+    img: "/cars/Car5.png",
+  },
+  {
+    id: 6,
+    name: "INNOVA HYCROSS",
+    acPrice: 26,
+    nonAcPrice: 25,
+    img: "/cars/Car8.png",
+  },
+  {
+    id: 7,
+    name: "TEMPO TRAVELLER",
+    acPrice: 30,
+    nonAcPrice: 29,
+    img: "/cars/Car6.png",
+  },
+  {
+    id: 8,
+    name: "FORCE URBANIA",
+    acPrice: 35,
+    nonAcPrice: 34,
+    img: "/cars/Car7.png",
+  },
 ];
 
 function Hero({ darkMode }) {
@@ -56,6 +83,11 @@ function Hero({ darkMode }) {
   const toggleIdle = darkMode
     ? "border-white/10 bg-white/5 text-white hover:border-orange-400 hover:bg-orange-500/5"
     : "border-gray-300 bg-gray-100 text-gray-900 hover:border-orange-400 hover:bg-orange-50";
+
+  // Just look up the fixed price for the current AC / Non-AC selection — no calculation.
+  function getDisplayPrice(v) {
+    return acType === "ac" ? v.acPrice : v.nonAcPrice;
+  }
 
   function Field({ label, icon: Icon, ...props }) {
     return (
@@ -401,7 +433,7 @@ function Hero({ darkMode }) {
                       className="h-12 w-full mx-auto object-contain"
                     />
                     <p className="text-orange-400 font-bold mt-1.5 text-xs">
-                      {v.price}
+                      ₹{getDisplayPrice(v)}/km
                     </p>
                     <h4
                       className={`mt-0.5 text-[10px] font-semibold leading-tight ${
